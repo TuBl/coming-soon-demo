@@ -134,9 +134,11 @@
 						font-size: 1em;
 						width: 45%;
 						border-radius: 3%;
+						cursor: pointer;
 					}
 					input:hover {
 						transform: scale(0.98);
+						transition: transform 100ms ease-in-out;
 					}
 				}
 			}
@@ -164,9 +166,11 @@
 						font-size: 1em;
 						width: 25%;
 						border-radius: 3%;
+						cursor: pointer;
 					}
 					input:hover {
 						transform: scale(0.98);
+						transition: transform 100ms ease-in-out;
 					}
 				}
 
