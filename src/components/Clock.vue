@@ -1,7 +1,7 @@
 <template>
 	<div class="clock">
-		<p class="date">{{ date }}</p>
 		<p class="time">{{ time }}</p>
+		<p class="date">{{ date }}</p>
 	</div>
 </template>
 
