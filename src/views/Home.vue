@@ -135,6 +135,9 @@
 						width: 45%;
 						border-radius: 3%;
 					}
+					input:hover {
+						transform: scale(0.98);
+					}
 				}
 			}
 			.main--secondary-container {
@@ -162,7 +165,11 @@
 						width: 25%;
 						border-radius: 3%;
 					}
+					input:hover {
+						transform: scale(0.98);
+					}
 				}
+
 				.img-container {
 					height: 515px;
 					widows: 960px;
