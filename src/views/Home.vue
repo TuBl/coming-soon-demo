@@ -16,13 +16,13 @@
 				</div>
 
 				<div class="btn">
-					<input type="submit" value="Subscribe" />
+					<input type="submit" value="SUBMIT" />
 				</div>
 			</form>
 			<div class="main--secondary-container">
-				<h1>Take a look here for the second clock.</h1>
+				<h1>TAKE A LOOK HERE FOR THE SECOND CLOCK.</h1>
 				<div class="btn">
-					<input type="submit" value="Second Time" />
+					<input type="submit" value="SECOND TIME" />
 				</div>
 				<div class="img-container">
 					<img src="../assets/temp_head.jpeg" alt="" />
@@ -51,7 +51,8 @@
 
 <style lang="scss" scoped>
 	label {
-		color: #586f7c;
+		// color: #586f7c;
+		color: #fffffc;
 		font-size: 1.2em;
 		padding: 1em;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -127,13 +128,18 @@
 					text-align: center;
 
 					input {
-						background: #586f7c;
+						background: rgb(84, 51, 176);
+						background: linear-gradient(
+							110deg,
+							rgba(84, 51, 176, 1) 0%,
+							rgba(84, 177, 212, 1) 65%
+						);
 						color: #fffffc;
 						padding: 1em;
 						margin-left: 5em;
 						font-size: 1em;
-						width: 45%;
-						border-radius: 3%;
+						width: 10%;
+						border-radius: 35px;
 						cursor: pointer;
 					}
 					input:hover {
@@ -160,11 +166,11 @@
 					margin-bottom: 5em;
 
 					input {
-						background: #586f7c;
+						background: black;
 						color: #fffffc;
-
+						margin-left: 2.2em;
 						font-size: 1em;
-						width: 25%;
+						width: 15%;
 						border-radius: 3%;
 						cursor: pointer;
 					}

@@ -18,15 +18,16 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
-		color: #2c3e50;
+		// color: #2c3e50;
 	}
 	html,
 	body {
 		height: 100vh;
 	}
 	body {
-		background: #0f3854;
-		background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
-		background-size: 100%;
+		// background: #0f3854;
+		background: black;
+		// background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+		// background-size: 100%;
 	}
 </style>

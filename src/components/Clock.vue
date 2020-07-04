@@ -1,7 +1,29 @@
 <template>
 	<div class="clock">
-		<p class="time">{{ time }}</p>
-		<p class="date">{{ date }}</p>
+		<countdown
+			:time="120 * 24 * 60 * 60 * 1000"
+			ref="countdown"
+			:auto-start="false"
+		>
+			<template slot-scope="props">
+				<ul class="time">
+					<li>
+						<span>Days</span> <span>{{ props.days }}</span>
+					</li>
+					<li>
+						<span>Hours</span> <span>{{ props.hours }}</span>
+					</li>
+					<li>
+						<span>Minutes</span> <span>{{ props.minutes }}</span>
+					</li>
+					<li>
+						<span>Seconds</span> <span>{{ props.seconds }}</span>
+					</li>
+				</ul>
+			</template>
+		</countdown>
+		<!-- <p class="time">{{ time }}</p>
+		<p class="date">{{ date }}</p> -->
 	</div>
 </template>
 
@@ -14,6 +36,7 @@
 				date: "",
 				week: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
 				interval: null,
+				format: "",
 			};
 		},
 		methods: {
@@ -41,8 +64,12 @@
 			},
 		},
 		created() {
-			this.interval = setInterval(() => this.updateTime(), 1000);
-			this.updateTime();
+			// this.interval = setInterval(() => this.updateTime(), 1000);
+			// this.updateTime();
+			this.$refs.countdown.start();
+		},
+		mounted() {
+			this.$refs.countdown.start();
 		},
 	};
 </script>
@@ -59,8 +86,17 @@
 		text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
 		.time {
 			letter-spacing: 0.05em;
-			font-size: 80px;
+			font-size: 2em;
 			padding: 5px 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			li {
+				border: outset;
+				display: flex;
+				flex-direction: column;
+			}
 		}
 		.date {
 			letter-spacing: 0.1em;
